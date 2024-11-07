@@ -1,0 +1,221 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    //display: grid;
+    grid-template-columns: 1fr;
+    //grid-gap: 5px; /* Decreased spacing */
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"],input[type="password"],input[type="email"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(resim.jpg);
+}
+
+/* Center the main div */
+#main {
+    //width: 100%;
+	width: 100vw;
+    height: 100vh;
+    //display: flex;
+    //justify-content: center; /* Center horizontally */
+    //align-items: center; /* Center vertically */
+}
+
+#btnDiv {
+    width: 50%;
+    background-color: #caebe1;
+    padding: 10px;
+    display: flex;
+    //flex-direction: column;
+    //align-items: flex-start;
+}
+
+.btns {
+    display: block;
+    margin: 15px 15px;
+    padding: 8px 15px;
+    //background-color: #4caf50;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btns:hover {
+    //background-color: #45a049;
+    transform: scale(1.15);
+}
+
+#actionDiv {
+    width: 100%;
+    //background-color: #caebe1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabloDiv,
+.ekleDiv,
+.gDiv {
+    width: 100%;
+    padding: 20px;
+    //background-color: #caebe1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Hide elements by default */
+.hidden {
+    display: none;
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btnDiv,
+    #actionDiv {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #ekleDiv,
+    #gDiv {
+        width: 80%;
+    }
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #caebe1; /* Set the background color */
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Style the first row (header row) */
+table tr:first-child th,
+table tr:first-child td {
+    background-color: #d0d0d0;
+    font-weight: bold;
+}
+
+#sg {
+  background-color: #e46565;
+  color: white;
+  padding: 0.4em 0.5em;
+  text-decoration: none;
+}
+
+#sg:hover {
+  background-color: #555;
+}
+
+#lg {
+  background-color: #36c4f2;
+  color: white;
+  padding: 0.4em 0.5em;
+  text-decoration: none;
+}
+
+#lg:hover {
+  background-color: #8266e3;
+}
+
+#update {
+    display: block;
+    margin: 15px 15px;
+    padding: 8px 15px;
+    background-color: #4a3bd4;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#update:hover {
+    background-color: #8e88e8;
+    transform: scale(1.15);
+}
+
+#save {
+    display: block;
+    margin: 15px 15px;
+    padding: 8px 15px;
+    background-color: #930f8a;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#save:hover {
+    background-color: #8e88e8;
+    transform: scale(1.15);
+}
+
+.b4 {
+    background-color: #d51212;
+
+}
+
+.b4:hover {
+    background-color: #f0536c;
+    transform: scale(1.15);
+}
+
+
+.b1, .b2, .b3 {
+    background-color: #8266e3;
+
+}
+
+.b1:hover, .b2:hover, .b3:hover {
+    background-color: #a38fe8;
+    transform: scale(1.15);
+}
+
+#update, #save {
+text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
