@@ -1,0 +1,229 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(resim.jpg);
+}
+
+/* Main container */
+#main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Form section */
+#form {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #caebe1;
+}
+
+#form input:hover,
+select:hover {
+    transform: scale(1.11);
+    font-size: 16px;
+    transition: 0s;
+}
+
+/* Results section */
+#results {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #caebe1;
+}
+
+/* Form styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px; /* Decreased spacing */
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border: 1px solid #141313;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px; /* Adjusted margin for responsiveness */
+}
+
+.btn--clr {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn--calculate {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn--clr:hover {
+    background-color: #620802;
+    transform: scale(1.1);
+}
+
+.btn--calculate:hover {
+    background-color: #045627;
+    transform: scale(1.2);
+}
+
+.btn--kaydet {
+    background-color: #9183d3;
+    color: white;
+}
+
+.btn--kaydet:hover {
+    background-color: #3d22bc;
+    transform: scale(1.2);
+}
+
+/* Result rows */
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.cell1 {
+    flex: 1;
+    padding: 5px;
+    border-right: 1px solid #ccc;
+    text-align: right;
+    background-color: #f0f0f0;
+}
+
+.cell2 {
+    flex: 2;
+    padding: 5px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 500px) {
+    
+    #main {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column; /* Set to column layout */
+        align-items: center; /* Center align items horizontally */
+     
+    }
+    
+    #form {
+        width: 100%; /* Full width in the flex container */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px; /* Add a bottom margin for spacing */
+        margin-right: 10px;
+    }
+
+    .btn-container {
+        display: block; /* Reset to default display value */
+        text-align: center; /* Center-align buttons */
+    }
+    
+    .btn {
+        display: inline-block; /* Display buttons inline */
+        margin: 5px; /* Adjust margin between buttons */
+    }
+    
+    #results {
+        width: 100%; /* Full width on small screens */
+    }
+    
+    
+}
+
+#admineDon,
+#cikis {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px; /* Adjusted margin for responsiveness */
+}
+
+#admineDon {
+    background-color: #5a9cff;
+    color: white;
+}
+
+#admineDon:hover {
+    background-color: #1f5aff;
+    transform: scale(1.1);
+}
+
+#cikis {
+    background-color: #f44336;
+    color: white;
+}
+
+#cikis:hover {
+    background-color: #d62c1a;
+    transform: scale(1.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #caebe1; /* Set the background color */
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Style the first row (header row) */
+table tr:first-child th,
+table tr:first-child td {
+    background-color: #d0d0d0;
+    font-weight: bold;
+}
